@@ -8,7 +8,7 @@ const app = express();
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
-  res.status(200).send({ description: 'Welcome!' });
+  res.status(200).send({ name: pkg.name });
 });
 
 app.get('/info', (req, res) => {
